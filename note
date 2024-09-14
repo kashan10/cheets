@@ -1,1 +1,2 @@
-nmap --script smb-os-discovery 10.10.1.0/24 -oN FQDN.txt
+nmap --script smb-os-discovery 10.10.1.0/24 -oN FQDN.txt (run with per su)
+nmap -p 80,8080 192.168.1.0/24 (find the port 80)
