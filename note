@@ -12,5 +12,6 @@ hashcat -m 5600 hash.txt /usr/share/wordlists/rockyou.txt (NTLM )
 -a             all of the above (full basic enumeration)
 enum4linux -a {IP Address of your Active Machine}( enumerate SMB shares)
 enum4linux -A {IP of your Active Machine} 
+https://github.com/AJChestnut/Network-Services-TryHackMe-Writeup
 smbclient //{IP address}/{Share Name} -U {Username} -p {Port Number}
 smbcliet //10.10.10.2/secret -U suit -p 445
