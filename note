@@ -4,3 +4,6 @@ nmap -p 139,445 --open -sV 192.168.0.1/24(find the smb server Microsoft-ds on po
 sudo responder -I eth0 (LLMNR/NBT-NS Poisoning through SMB)
 hashcat -m 5600 hash.txt /usr/share/wordlists/rockyou.txt (NTLM )
 enum4linux -a {IP Address of your Active Machine}( enumerate SMB shares)
+enum4linux -A {IP of your Active Machine} 
+smbclient //{IP address}/{Share Name} -U {Username} -p {Port Number}
+smbcliet //10.10.10.2/secret -U suit -p 445
