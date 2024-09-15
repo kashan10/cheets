@@ -3,6 +3,13 @@ nmap -p 80,8080 192.168.1.0/24 (find the port 80)
 nmap -p 139,445 --open -sV 192.168.0.1/24(find the smb server Microsoft-ds on port 445, but it can run over NetBIOS on 139)
 sudo responder -I eth0 (LLMNR/NBT-NS Poisoning through SMB)
 hashcat -m 5600 hash.txt /usr/share/wordlists/rockyou.txt (NTLM )
+-U             get userlist
+-M             get machine list
+-N             get namelist dump (different from -U and-M)
+-S             get sharelist
+-P             get password policy information
+-G             get group and member list
+-a             all of the above (full basic enumeration)
 enum4linux -a {IP Address of your Active Machine}( enumerate SMB shares)
 enum4linux -A {IP of your Active Machine} 
 smbclient //{IP address}/{Share Name} -U {Username} -p {Port Number}
