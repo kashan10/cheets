@@ -21,6 +21,7 @@ adb port (5555)
 apt-get install adb
 git clone https://github.com/prbhtkumr/PhoneSploit.git
 cd phonesploit
+https://github.com/horsicq/Detect-It-Easy (to scan elf file)
 pyhton3 phonesploit.py
 3 (Connect to new phone)
 Add IP address of android device
