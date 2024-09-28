@@ -43,3 +43,6 @@ showmount -e 192.168.1.102
 sudo mkdir -p /mnt/nfs_shared
 sudo mount server_IP:/mnt/shared /mnt/nfs_shared ( mount the shares using the IP address )
 df -h (check that they mounted successfully)
+
+forensic image -> openstego
+
