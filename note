@@ -21,6 +21,14 @@ adb port (5555)
 apt-get install adb
 git clone https://github.com/prbhtkumr/PhoneSploit.git
 cd phonesploit
+nmap -sV --script=nfs-showmount 192.168.1.0/24
+sudo apt install nfs-common
+showmount -e 192.168.1.102
+
+(Mounting the Shared Directory on the Client Machine)
+sudo mkdir -p /mnt/nfs_shared
+sudo mount server_IP:/mnt/shared /mnt/nfs_shared
+
 https://github.com/horsicq/Detect-It-Easy (to scan elf file)
 pyhton3 phonesploit.py
 3 (Connect to new phone)
