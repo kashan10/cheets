@@ -48,3 +48,8 @@ forensic image -> openstego
 
 nmap -p 21 192.168.0.0/24
 hydra -l root -P /usr/share/wordlist {ip} ftp
+
+file info for detect it esay
+
+wireshark
+ip.src!={ip} && ip.dest=={ip}
