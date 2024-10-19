@@ -86,4 +86,5 @@ hashmyfile:to check tamper or not
 cryptoforge: to encrypt snd decreypt 
 BcTextEncoder: for encoding data to hex format 
 
-aircrack-ng wap1crack/wap2crack.cap -w password.txt
+aircrack-ng wap1crack.cap
+aircrack-ng wap2crack.cap -w password.txt
