@@ -79,3 +79,9 @@ java -cp target/marshalsec-0.0.3-SNAPSHOT-all.jar marshalsec.jndi.LDAPRefServer 
 Crack the Hash
 Determine Hash Type:hash-identifier or hashid 
 Crack the Hash: john --format=raw-sha256 key2secret.txt or hashcat -m 1400 key2secret.txt /path/to/wordlist
+or
+https://hashes.com/en/decrypt/hash
+
+hashmyfile:to check tamper or not
+cryptoforge: to encrypt snd decreypt 
+BcTextEncoder: for encoding data to hex format 
