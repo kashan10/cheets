@@ -88,3 +88,12 @@ BcTextEncoder: for encoding data to hex format
 
 aircrack-ng wap1crack.cap
 aircrack-ng wap2crack.cap -w password.txt
+Aircrack-ng Crack the wireless encryption and identify the Wi-Fi password 
+1st tentative:aircrack-ng pcapfile (usually works only for WEP encryption) 
+2nd tentative: aircrack-ng -w passwordlist pcapfile 
+3rd tentative: adding BSSID (-b flag): aircrack-ng -b BSSID -w passwordlist pcapfile (To find BSSID: on Wireshark click on packet, search BSSID and copy value) 
+ 
+Theef default port: 9871, 6703, FTP 2968 
+NJRAT default port: 5552 
+MoSucker default port: 200005 
+ProRat default port: 5110
